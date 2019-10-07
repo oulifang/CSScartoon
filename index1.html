@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#father{
+		width: 1200px;
+		height: 600px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.son{
+		width: 7200px;
+		animation: switch 12s ease-out infinite;
+		
+	}
+   img{
+		width: 1200px;
+		height: 600px;
+		float: left;
+	}
+	@keyframes switch{
+		0%, 10%{
+			margin-left: 0;
+		}
+		20%,30%{
+			margin-left: -1200px;
+		}
+		40%,50%{
+			margin-left: -2400px;
+		}
+		60%,70%{
+			margin-left: -3600px;
+		}
+		80%,90%{
+			margin-left: -4800px;
+		}
+		99%,100%{
+			margin-left: -6000px;
+		}
+	}
+	</style>
+</head>
+<body>
+<div id="father">
+	<div class="son">
+	<img src="img/1.jpg">
+	<img src="img/2.jpg">
+	<img src="img/3.jpg">
+	<img src="img/4.jpg">
+	<img src="img/5.jpg">
+	<img src="img/1.jpg">
+
+	</div>
+</div>
+	
+</body>
+</html>
